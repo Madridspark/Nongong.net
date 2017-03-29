@@ -1,0 +1,66 @@
+.form-table
+{
+    font-size: 16px;
+    line-height: 64px;
+    margin-top: 30px;
+}
+
+.form-table table tr
+{
+    vertical-align: top;
+}
+
+.form-table table tr td:nth-child(1), .form-table table tr td:nth-child(2)
+{
+    padding-right: 16px;
+}
+
+.form-table form input[type="submit"], .form-table form input[type="button"]
+{
+    color: #fff;
+    background-color: #66cd00;
+    cursor: pointer;
+    line-height: 2em;
+    padding: 0 3em;
+    border: none;
+}
+
+.form-table form input[type="number"], .form-table form input[type="text"], textarea
+{
+    padding: 8px 15px;
+    border: solid 1px #ccc;
+}
+
+.form-table form select
+{
+    padding: 2px 15px;
+    border: solid 1px #ccc;
+    margin-right: 20px;
+}
+
+.form-table form *:focus, .form-table form *:active, .form-table form *:checked
+{
+    outline: none;
+}
+
+.form-table table tr td .index-class-option
+{
+    display: inline-block;
+    padding: 0 5px;
+    vertical-align: middle;
+}
+
+.form-table form input[type="number"].tiny-width, .form-table form input[type="text"].tiny-width
+{
+    width: 50px;
+}
+
+.form-table form input[type="number"].mid-width, .form-table form input[type="text"].mid-width
+{
+    width: 250px;
+}
+
+.form-table form input[type="number"].large-width, .form-table form input[type="text"].large-width
+{
+    width: 577px;
+}

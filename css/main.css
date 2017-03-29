@@ -1,0 +1,173 @@
+html, body
+{
+    width: 100%;
+    background-color: #f0fff0;
+}
+
+a{color:#63b8ff;text-decoration:none;}
+a:hover{cursor:pointer;}
+
+li{list-style:none;}
+
+textarea{resize:none;}
+
+.fl{float:left;}
+.fr{float:right;}
+.clf{clear:both;}
+.trans
+{
+    -webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.wrap
+{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*顶部导航栏*/
+.top-bar
+{
+    width: 100%;
+    min-width: 1000px;
+    font-size: 14px;
+    color: #666;
+    background-color: #fff;
+    border-bottom: solid 3px #66cd00;
+}
+
+/*.top-bar nav
+{
+    background-color: transparent;    
+}*/
+
+.top-bar nav .nav-user
+{
+    padding-top: 13px;
+    padding-bottom: 8px;
+}
+
+.top-bar nav .nav-user .login-divi
+{
+    margin: 0 7px;
+    color: #ccc;
+}
+
+.top-bar nav .site-title
+{
+    /*background-color: transparent;*/
+    display: block;
+}
+
+.top-bar nav .site-title h2
+{
+    color: #666;
+    font-size: 14px;
+    line-height: 16px;
+    padding-left: 45px;
+    /*background-color: transparent;*/
+    background-image: url(../img/home.png);
+    background-size: 37px 37px;
+    background-repeat: no-repeat;
+    font-weight: normal;
+    margin: 0;
+}
+
+.top-bar nav .site-title:hover h2
+{
+    color: #66cd00;
+}
+
+/*登录注册窗口*/
+#main-user-window-wrap
+{
+    display: none;
+    position:fixed;
+    z-index: 999;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+}
+
+#main-user-window
+{
+    position: absolute;
+    width: 400px;
+    height: 0;
+    top: 50%;
+    margin-top: -250px;
+    left: 50%;
+    margin-left: -200px;
+    box-shadow: 0 0 3px 3px #777;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.main-user-window-tab
+{
+
+}
+
+.main-user-window-tab input[type="radio"]
+{
+    display: none;
+}
+
+.ctl-panel
+{
+    position: relative;
+    margin-top: 30px;
+}
+
+/*页脚*/
+footer
+{
+    margin-top: 30px;
+    text-align: center;
+}
+
+footer::before
+{
+    content: "";
+    display: block;
+    width: 800px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1px;
+    -webkit-box-shadow: 0px 1px 2px #ccc;
+	-moz-box-shadow: 0px 1px 2px #ccc;
+	box-shadow: 0px 1px 2px #ccc;
+    background-color: #ccc;
+}
+
+footer ul li
+{
+    display: inline-block;
+}
+
+footer ul li a
+{
+    color: #777;
+    font-size: 12px;
+}
+
+footer ul li::after
+{
+    content: "|";
+    font-size: 12px;
+    color: #777;
+    margin: 0 10px;
+}
+
+footer ul li:last-child::after
+{
+    content: "";
+}

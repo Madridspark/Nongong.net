@@ -1,0 +1,85 @@
+/*头部操作面板*/
+.ctl-panel
+{
+    height: 100px;
+}
+
+.ctl-panel .logo
+{
+    display: block;
+    position: absolute;
+    width: 250px;
+    height: 100%;
+}
+
+.info-panel form table, .info-panel form input[type="number"], .form-table form input[type="text"], textarea, .info-panel form select
+{
+    color: #0e8ed8;
+}
+
+/*信息列表*/
+article
+{
+    background-color: #fefefe;
+    -webkit-box-shadow: 0 0 2px 2px #ccc;
+    -moz-box-shadow: 0 0 2px 2px #ccc;
+    box-shadow: 0 0 2px 2px #ccc;
+    margin-top: 30px;
+    box-sizing: border-box;
+    padding: 50px 30px;
+}
+
+article:hover
+{
+    -webkit-box-shadow: 0 0 2px 2px #999;
+    -moz-box-shadow: 0 0 2px 2px #999;
+    box-shadow: 0 0 2px 2px #999;
+}
+
+article table
+{
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    line-height: 3em;
+}
+
+article table tbody tr
+{
+    color: #0e8ed8;
+    border-bottom: solid 1px #66cd00;
+    transition: all 0.3s;
+}
+
+article table tbody tr:last-child
+{
+    border: none;
+}
+
+article table tbody tr:hover
+{
+    color: #1c86ee;
+    background-color: #deffde;
+    cursor: pointer;
+}
+
+article table td, article table th
+{
+    text-align: left;
+}
+
+article table td:nth-child(1), article table th:nth-child(1)
+{
+    text-indent: 1em;
+    width: 100px;
+}
+
+article table td:nth-child(2), article table th:nth-child(2)
+{
+    width: 250px;    
+}
+
+article table td:nth-child(3), article table th:nth-child(3)
+{
+    width: 100px;
+}

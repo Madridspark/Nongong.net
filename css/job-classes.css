@@ -1,0 +1,39 @@
+.index-checkbox
+{
+	position: relative;
+    vertical-align: middle;
+}
+
+.index-checkbox input[type=checkbox]
+{
+    display: none;
+}
+
+.index-checkbox div
+{
+    line-height: 48px;
+    vertical-align: -5%;
+    display: inline-block;
+    width: 14px;
+	height: 14px;
+    margin-right: 10px;
+	background: #fff;
+    border: solid 1px #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.index-checkbox input[type = checkbox]:checked + div
+{
+	background-color: #66cd00;
+	background-image: url(../img/checked.png);
+	background-size: contain;
+    border-color: transparent;
+}
+
+.job-classes .index-class-option
+{
+    display: inline-block;
+    padding: 0 5px;
+    vertical-align: middle;
+}

@@ -1,0 +1,43 @@
+article
+{
+    background-color: #fefefe;
+    -webkit-box-shadow: 0 0 2px 2px #ccc;
+    -moz-box-shadow: 0 0 2px 2px #ccc;
+    box-shadow: 0 0 2px 2px #ccc;
+    margin-top: 30px;
+    box-sizing: border-box;
+    padding: 50px 100px;
+}
+
+article:hover
+{
+    -webkit-box-shadow: 0 0 2px 2px #999;
+    -moz-box-shadow: 0 0 2px 2px #999;
+    box-shadow: 0 0 2px 2px #999;
+}
+
+article form
+{
+    text-align: center;
+}
+
+article table
+{
+    text-align: left;
+    width: 100%;
+}
+
+article table td:nth-child(1)
+{
+    width: 20px;
+}
+
+article table td:nth-child(2)
+{
+    width: 100px;
+}
+
+article form input[type="submit"], article form input[type="button"]
+{
+    margin: 0 50px;
+}
