@@ -50,6 +50,7 @@ textarea{resize:none;}
 {
     padding-top: 13px;
     padding-bottom: 8px;
+    margin-right: 10px;
 }
 
 .top-bar nav .nav-user .login-divi
@@ -102,22 +103,108 @@ textarea{resize:none;}
     width: 400px;
     height: 0;
     top: 50%;
-    margin-top: -250px;
+    margin-top: -350px;
     left: 50%;
+    padding: 0 30px;
     margin-left: -200px;
     box-shadow: 0 0 3px 3px #777;
     border-radius: 5px;
     background-color: #fff;
+    overflow: hidden;
 }
 
-.main-user-window-tab
+#main-user-window .close-btn
 {
-
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/close.png);
+    background-size: contain;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
 }
 
-.main-user-window-tab input[type="radio"]
+.main-user-window-tab-wrap
+{
+    margin: 70px 0;
+}
+
+.main-user-window-tab-wrap .main-user-window-tab
+{
+    display: block;
+    float: left;
+    width: 50%;
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 20px;
+    color: #aaa;
+    border-bottom: solid 1px #aaa;
+    cursor: pointer;
+}
+
+.main-user-window-tab-wrap input[type="radio"]
 {
     display: none;
+}
+
+.main-user-window-tab-wrap input[type="radio"]:checked + label.main-user-window-tab
+{
+    color: #66cd00;
+    border-bottom: solid 1px #66cd00;
+}
+
+.main-user-window-form-wrap
+{
+    width: 800px;
+}
+
+.main-user-window-form-wrap form
+{
+    float: left;
+    width: 400px;
+    box-sizing: border-box;
+    padding: 0 50px;
+    text-align: center;
+}
+
+.main-user-window-form-wrap form > *
+{
+    margin-bottom: 20px;
+}
+
+.main-user-window-form-wrap form input[type="text"], .main-user-window-form-wrap form input[type="password"], .main-user-window-form-wrap form select
+{
+    width: 100%;
+    padding: 10px 20px;
+    color: #aaa;
+    border: solid 1px #ddd;
+    box-sizing: border-box;
+}
+
+.main-user-window-form-wrap form input[type="text"]:focus, .main-user-window-form-wrap form input[type="password"]:focus
+{
+    outline: none;
+    color: #66cd00;
+    border-color: #66cd00;
+}
+
+.main-user-window-form-wrap form select:focus
+{
+    outline: none;
+}
+
+.main-user-window-form-wrap form input[type="submit"]
+{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 0;
+    outline: none;
+    color: #fff;
+    border: none;
+    background-color: #66cd00;
+    cursor: pointer;
 }
 
 .ctl-panel

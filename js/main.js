@@ -3,7 +3,6 @@ $(function()
     $("#main-user-window").click(
         function(event)
         {
-            event.preventDefault();
             event.stopPropagation();
         }
     )
@@ -11,6 +10,7 @@ $(function()
     $("#main-login-btn").click(window("login"));
     $("#main-signup-btn").click(window("signup"));
     $("#main-user-window-wrap").click(hideWindow);
+    $("#main-user-window .close-btn").click(hideWindow);
 
     function window(operation)
     {
@@ -18,6 +18,8 @@ $(function()
         {
             return function(event)
             {
+                $("#main-user-login-radio").attr("checked", "checked");
+                $(".main-user-window-form-wrap").css("margin-left", "0");
                 showWindow(event);
             }
         }
@@ -25,6 +27,8 @@ $(function()
         {
             return function(event)
             {
+                $("#main-user-signup-radio").attr("checked", "checked");
+                $(".main-user-window-form-wrap").css("margin-left", "-400px");
                 showWindow(event);
             }
         }
@@ -34,6 +38,18 @@ $(function()
         }
     }
 
+    $(".main-user-window-tab").click(function()
+    {
+        if($(this).attr("for") == "main-user-login-radio")
+        {
+            $(".main-user-window-form-wrap").css("margin-left", "0");
+        }
+        else
+        {
+            $(".main-user-window-form-wrap").css("margin-left", "-400px");
+        }
+    });
+
     function showWindow(event)
     {
         event.preventDefault();
@@ -41,7 +57,7 @@ $(function()
         $("#main-user-window-wrap").show(1,function()
         {
             $("#main-user-window-wrap").css("background-color", "rgba(0,0,0,0.5)");
-            $("#main-user-window").css("height", "500px");
+            $("#main-user-window").css("height", "700px");
         });;
     }
 

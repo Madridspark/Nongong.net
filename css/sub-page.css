@@ -1,4 +1,4 @@
-article
+article, aside
 {
     background-color: #fefefe;
     -webkit-box-shadow: 0 0 2px 2px #ccc;
@@ -9,35 +9,61 @@ article
     padding: 50px 100px;
 }
 
-article:hover
+article:hover, aside:hover
 {
     -webkit-box-shadow: 0 0 2px 2px #999;
     -moz-box-shadow: 0 0 2px 2px #999;
     box-shadow: 0 0 2px 2px #999;
 }
 
-article form
+article form, aside form
 {
     text-align: center;
 }
 
-article table
+article table, aside table
 {
     text-align: left;
     width: 100%;
 }
 
-article table td:nth-child(1)
+article table td:nth-child(1), aside table td:nth-child(1)
 {
     width: 20px;
 }
 
-article table td:nth-child(2)
+article table td:nth-child(2), aside table td:nth-child(2)
 {
     width: 100px;
 }
 
-article form input[type="submit"], article form input[type="button"]
+article form input[type="submit"], aside form input[type="button"]
 {
     margin: 0 50px;
+}
+
+.detail-panel-wrap
+{
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.detail-panel-wrap article
+{
+    width: 800px;
+    padding: 50px 30px;
+    margin-right: 20px;
+}
+
+.detail-panel-wrap aside
+{
+    padding: 50px 30px;
+    width: 400px;
+}
+
+.detail-panel-wrap h1
+{
+    margin-top: 0;
+    color: #66cd00;
 }

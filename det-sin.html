@@ -20,12 +20,16 @@
                     <h2 class="nav-user trans">农工网首页</h2>
                 </a>
                 <span class="nav-user fr">
+                    <a id="main-clradvs-btn">一键去除广告</a>
+                </span>
+                <span class="nav-user fr">
                     <!-- 登录/注册 -->
                     <a id="main-login-btn">登录</a>
                     <i class="login-divi">|</i>
                     <a id="main-signup-btn">注册</a>
                     <!-- 用户名（下拉菜单：信息完善）: 注销-->
-                    
+                    <!--周博文, 
+                    <a id="main-signup-btn">注销</a>-->
                 </span>
                 <div class="clf"></div>
             </nav>
@@ -34,12 +38,33 @@
         <!-- 登录/注册窗口 -->
         <div id="main-user-window-wrap" class="trans">
             <div id="main-user-window" class="trans">
-                <label class="main-user-window-tab">
-                    <input type="radio" value="login">
-                </label>
-                <label class="main-user-window-tab">
-                    <input type="radio" value="signup">
-                </label>
+                <i class="close-btn"></i>
+                <form class="main-user-window-tab-wrap">
+                    <input id="main-user-login-radio" name="opt" type="radio" value="login">
+                    <label for="main-user-login-radio" class="main-user-window-tab trans">登录</label>
+                    <input id="main-user-signup-radio" name="opt" type="radio" value="signup">
+                    <label for="main-user-signup-radio" class="main-user-window-tab trans">注册</label>
+                    <div class="clf"></div>
+                </form>
+                <div class="main-user-window-form-wrap trans">
+                    <form>
+                        <input type="text" placeholder="用户名">
+                        <input type="password" placeholder="密码">
+                        <input type="submit">
+                    </form>
+                    <form>
+                        <input type="text" placeholder="用户名">
+                        <input type="password" placeholder="设置密码">
+                        <input type="password" placeholder="确认密码">
+                        <select id="u31_input" name="status">
+                            <option selected="" value="person">个人用户</option>
+                            <option value="company">公司用户</option>
+                            <option value="person">管理员</option>
+                        </select>
+                        <input type="submit">
+                    </form>
+                    <div class="clf"></div>
+                </div>
             </div>
         </div>
 
@@ -53,8 +78,83 @@
         </header>
 
         <!-- content -->
-        <article class="wrap trans">
-        </article>
+            
+
+        <div class="detail-panel-wrap">
+            <article class="form-table fl trans">
+                <table>
+                    <tr>
+                        <td class="index-icon">&#xe657;</td>
+                        <td>工作种类：</td>
+                        <td class="job-classes">
+                            <ul style="margin: 0;">
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="pub-per-icon">&#xe622;</td>
+                        <td>学历文凭：</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="index-icon">&#xe660;</td>
+                        <td>薪水要求：</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="pub-per-icon">&#xe69a;</td>
+                        <td>工作经验：</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="info-com-icon">&#xe606;</td>
+                        <td>个人简介：</td>
+                        <td>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+
+            <aside class="form-table fl trans">
+                <h1>发布者：周博文</h1>
+                <table>
+                    <tr>
+                        <td class="info-per-icon">&#xe65f;</td>
+                        <td>年龄：</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="info-per-icon">&#xe6a2;</td>
+                        <td>省 / 市：</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="info-per-icon">&#xe685;</td>
+                        <td>详细住址：</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="info-per-icon">&#xe62f;</td>
+                        <td>电子邮件：</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="info-per-icon">&#xe656;</td>
+                        <td>联系方式：</td>
+                        <td>
+                        </td>
+                    </tr>
+                </table>
+            </aside>
+            <div class="clf"></div>
+        </div>
 
         <footer>
             <ul>
